@@ -93,8 +93,3 @@ Top-level:
 - If docker containers fail, run `docker-compose logs` to inspect output.
 - If a git push fails, ensure authentication (PAT or gh login) is set up.
 
----
-
-If you want, I can also:
-- Create individual READMEs inside `backend_SalesDuo/` and `frontend_SalesDuo/` with commands specific to each service.
-- Rename the repository default branch from `master` to `main` and update remote branches.
