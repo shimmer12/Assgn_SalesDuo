@@ -1,0 +1,40 @@
+{
+  "name": "salesduo_backend",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "preinstall": "npm i nodemon -g",
+    "build": "tsc",
+    "dev": "nodemon --exec tsx src/index.ts",
+    "db:up": "docker-compose up -d",
+    "db:push": "drizzle-kit push",
+    "db:down": "docker-compose down -v",
+    "db:studio": "drizzle-kit studio",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.2",
+    "axios": "^1.12.2",
+    "cheerio": "^1.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.44.6",
+    "express": "^5.1.0",
+    "mysql2": "^3.15.2",
+    "openai": "^6.5.0",
+    "postgres": "^3.4.7"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.8.0",
+    "drizzle-kit": "^0.31.5",
+    "tsx": "^4.20.6",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.9.3"
+  }
+}

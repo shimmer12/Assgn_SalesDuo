@@ -1,0 +1,32 @@
+# Frontend .gitignore - Vite + React + TypeScript
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Local env
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Vite cache
+.vite/
+
+# TypeScript
+*.tsbuildinfo
+
+# Public/static uploads (if any)
+public/uploads/
+
