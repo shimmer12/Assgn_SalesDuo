@@ -1,38 +1,48 @@
-(# Root .gitignore - workspace-level ignore rules)
-# Node / JS
+### Root gitignore for monorepo: ignores common OS, IDE, node, docker and build artifacts
+
+# Node
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Logs
-logs/
-*.log
-
-# Runtime / build output
+# TypeScript
 dist/
 build/
-coverage/
-.cache/
+.turbo/
+.tsbuildinfo
 
-# Environment files
+# Vite / Frontend
+/.vite/
+/.cache/
+dist/
+
+# Docker
+docker-compose.override.yml
+**/Dockerfile.local
+
+# Environment
 .env
-.env.local
-.env.*.local
+.env.*
 
-# OS / Editor
+# Logs
+*.log
+logs/
+
+# OS files
 .DS_Store
 Thumbs.db
+
+# IDEs
 .vscode/
 .idea/
 
-# TypeScript
-*.tsbuildinfo
-
-# Docker / local override files (don't ignore Dockerfile itself)
-docker-compose.override.yml
+# Coverage and test output
+coverage/
+.nyc_output/
 
 # Misc
-*.tgz
+.cache/
+*.local
 

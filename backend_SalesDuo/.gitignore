@@ -1,31 +1,30 @@
-# Backend .gitignore - Node + TypeScript
+### Backend (Node + TypeScript) gitignore
 
-# Dependencies
+# Node
 node_modules/
-
-# Build output
-dist/
-build/
-coverage/
-
-# Runtime files
-.env
-.env.local
-.env.*.local
 npm-debug.log*
 
-# TypeScript
-*.tsbuildinfo
+# Build
+dist/
+build/
+.tsbuildinfo
 
-# Drizzle / DB
-drizzle.sqlite
+# Environment
+.env
+.env.*
+
+# Logs
+logs/
+*.log
+
+# IDEs
+.vscode/
+.idea/
+
+# Database
+*.sqlite
+*.db
 
 # Docker
 docker-compose.override.yml
-
-# Editor/OS
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
 
